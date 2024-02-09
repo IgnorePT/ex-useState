@@ -1,5 +1,6 @@
 import "./styles.css";
 import { useState } from "react";
+import Counter from "./componentes/Exercicio1/Exercicio1";
 
 // Temos 2 logicas uma para incrementar outra paara diiminuir
 // Alteraro span
@@ -43,13 +44,6 @@ export default function App() {
 
   //Universo da Renderização
   return (
-    <div className="App">
-      <h2>My Amazing Counter</h2>
-      <div>
-        <button onClick={subtract}> - </button>
-        <span> {counter} </span>
-        <button onClick={add}> + </button>
-      </div>
-    </div>
+    <Counter />
   );
 }
